@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+    <div class="row">
+        <div class="jumbotron">
+            <h4> Welcome to DataClean {{ current_user.username }} -- an application for cleaning of EEG/EKG csv files as per your desired specifications. We allow to selection of specific columns, selection of specific row/column combinations, cropping of your data, and data plotting. </h4>
+		</div>
+    </div>
+    <div class="row">
+        <div class="jumbotron" align="center">
+        <img src="{{url_for('static', filename='front.png')}}" />
+    	</div>
+    </div>
+
+{% endblock %}
