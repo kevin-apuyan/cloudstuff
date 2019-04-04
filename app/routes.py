@@ -51,7 +51,7 @@ def login():
 
 @app.route('/col_sel', methods=['GET', 'POST'])
 def col_sel():
-    df = pd.read_csv('/microblog/app/jona15.csv')
+    df = pd.read_csv('/Users/Kevin/Desktop/MICROBLOG_BACKUP_VERSION7/microblog/instance/static/jona15.csv ')
     
     form = ColForm()
     start = 0
