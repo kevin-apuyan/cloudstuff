@@ -51,7 +51,7 @@ def login():
 
 @app.route('/col_sel', methods=['GET', 'POST'])
 def col_sel():
-    df = pd.read_csv(r'jona15.csv ')
+    df = pd.read_csv('../jona15.csv ')
     
     form = ColForm()
     start = 0
